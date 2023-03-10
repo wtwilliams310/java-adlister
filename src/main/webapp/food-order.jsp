@@ -11,12 +11,12 @@
     <title>Food Order</title>
 </head>
 <body>
-
+<%@ include file="partials/navbar.jsp" %>
 <h1>Food Order Form</h1>
 <form method="GET" action="/foods.jsp">
   <select name="food" id="food">
     <option value="dairy">Dairy</option>
-    <option value="meat">Meat</option>
+    <option value="meats">Meat</option>
     <option value="rhubarb">rhubarb</option>
 
   </select>

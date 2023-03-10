@@ -27,9 +27,6 @@
     request.setAttribute("foods", foods.get(foodType));
 
 
-
-//
-
 %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
@@ -37,6 +34,7 @@
     <title>Titles</title>
 </head>
 <body>
+<%@ include file="partials/navbar.jsp" %>
 <h1>food type: ${foodType}</h1>
 <h3>${foods}</h3>
 
