@@ -13,5 +13,11 @@ public class ViewProfileServlet extends HttpServlet {
             return;
         }
         request.getRequestDispatcher("/WEB-INF/profile.jsp").forward(request, response);
+
+        if(request.getSession().getAttribute("logout") == null || request.getSession().getAttribute("logout").equals("")) {
+            request.getSession().removeAttribute("user");
+            request.getSession().invalidate();
+            response.sendRedirect("/login");
+        }
     }
 }
