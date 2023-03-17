@@ -12,11 +12,13 @@
 </head>
 <body>
     <h1>Register</h1>
-    <form action="" method="post">
+    <form action="/register" method="POST">
         <label for="username">Username</label>
-        <input type="text" name="username" id="username">
+        <input type="text" name="username" id="username"><br>
         <label for="password">Password</label>
-        <input type="password" name="password" id="password">
+        <input type="password" name="password" id="password"><br>
+        <label for="email">email</label>
+        <input type="email" name="email" id="email">
         <button type="submit">Submit</button>
     </form>
 </body>
